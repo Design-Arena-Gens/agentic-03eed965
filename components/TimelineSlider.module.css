@@ -1,0 +1,134 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 28px;
+  border-radius: 20px;
+  background: rgba(16, 18, 32, 0.78);
+  border: 1px solid rgba(118, 126, 255, 0.18);
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.heading h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.heading p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: rgba(214, 217, 248, 0.7);
+}
+
+.sliderRow {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.slider {
+  appearance: none;
+  width: 100%;
+  background: transparent;
+  pointer-events: none;
+  position: absolute;
+  height: 0;
+}
+
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6e87ff, #ff6fc4);
+  box-shadow: 0 4px 12px rgba(112, 122, 255, 0.46);
+  pointer-events: auto;
+}
+
+.slider::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: none;
+  background: linear-gradient(135deg, #6e87ff, #ff6fc4);
+  box-shadow: 0 4px 12px rgba(112, 122, 255, 0.46);
+  pointer-events: auto;
+}
+
+.slider::-webkit-slider-runnable-track {
+  height: 0;
+}
+
+.track {
+  position: relative;
+  width: 100%;
+  height: 54px;
+  border-radius: 16px;
+  background: linear-gradient(
+    90deg,
+    rgba(108, 118, 255, 0.14),
+    rgba(255, 112, 205, 0.14)
+  );
+  overflow: hidden;
+  display: flex;
+  align-items: stretch;
+}
+
+.selection {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.marker {
+  position: absolute;
+  top: 6px;
+  bottom: 6px;
+  border-radius: 14px;
+  outline: none;
+  border: none;
+  color: rgba(13, 13, 24, 0.85);
+  font-size: 0.75rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.marker span {
+  pointer-events: none;
+}
+
+.marker:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 18px rgba(118, 126, 255, 0.28);
+}
+
+.cinematic {
+  background: linear-gradient(135deg, #96a5ff, #6dd8ff);
+}
+
+.flash-cut {
+  background: linear-gradient(135deg, #ff9bd2, #ffc778);
+}
+
+.story-beat {
+  background: linear-gradient(135deg, #88f7c6, #71b8ff);
+}
+
+.slow-pan {
+  background: linear-gradient(135deg, #b79cff, #ff9ce4);
+}

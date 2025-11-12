@@ -1,0 +1,79 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 32px;
+}
+
+.leftColumn,
+.rightColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 28px;
+  border-radius: 22px;
+  background: rgba(15, 16, 28, 0.85);
+  border: 1px solid rgba(119, 125, 232, 0.18);
+}
+
+.panel header h2 {
+  margin: 0;
+}
+
+.panel header p {
+  margin: 6px 0 0;
+  color: rgba(214, 218, 247, 0.68);
+  font-size: 0.9rem;
+}
+
+.previewShell {
+  border-radius: 18px;
+  overflow: hidden;
+  background: rgba(10, 10, 19, 0.8);
+  border: 1px solid rgba(96, 104, 210, 0.16);
+  padding: 12px;
+}
+
+.video {
+  width: 100%;
+  border-radius: 12px;
+  background: #05060c;
+}
+
+.notes {
+  padding: 26px;
+  border-radius: 20px;
+  background: rgba(20, 21, 36, 0.82);
+  border: 1px solid rgba(123, 130, 240, 0.16);
+}
+
+.notes h4 {
+  margin: 0 0 12px;
+}
+
+.notes ul {
+  margin: 0;
+  padding-left: 20px;
+  color: rgba(213, 216, 244, 0.72);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 1080px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
